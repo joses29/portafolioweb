@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Web</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/experiences.css" />
+    <link rel="stylesheet" href="css/cursos.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <script defer src="js/app.js"></script>
+    <script defer src="js/modal.js"></script>
+  </head>
+  <body>
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img height="50" width="50" src="img/perfil.jpg" alt="programador" />
+          <div class="logotype">
+            Jose Saltos<br />
+            { JavaScript }
+          </div>
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="#profile" class="selected">Perfil</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#cursos">Cursos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="profile" id="profile">
+        <div class="profile-info">
+          <h1 class="profile-title">Hola, soy <br />Alex Velecela</h1>
+          <p class="profile-details">
+            Me gusta mucho la arquitectura y desarrollo de software, estudiante
+            de la Universidad Estatal de Milagro
+          </p>
+          <button class="profile-btn">Descargar cv</button>
+        </div>
+        <span class="profile-img-section">
+          <img class="profile-img" src="img/perfil.jpg" alt="programador" />
+          <div class="profile-img-line"></div>
+        </span>
+      </section>
+    </div>
+
+    <section class="experiences" id="experience">
+      <img src="img/wave.svg" alt="división" class="wave" />
+      <div class="experiences-body">
+        <h2 class="experiences-title">Experiencia</h2>
+        <div class="experiences-grid">
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <div class="experience-date">2020-2021</div>
+            <div class="experience-company">Universidad Estatal de Milagro</div>
+            <div class="experience-position">Ingenieria en Software</div>
+            <div class="experience-description">
+              La Universidad Estatal de Milagro es una universidad pública con
+              sede en la ciudad de Milagro. Ofrece carreras en las modalidades
+              presencial, semipresencial y en línea, así como programas de
+              posgrado.
+            </div>
+          </div>
+          <div class="experience experience_left">
+            <div class="experience-date">2011-2016</div>
+            <div class="experience-company">
+              Unidad Educativa Jose Maria Velasco Ibarra
+            </div>
+            <div class="experience-position">Bachillerato internacional</div>
+            <div class="experience-description">
+              Colegio Fiscal Velasco Ibarra, Unidad Educativa que brinda una
+              educación integral y moral a los estudiantes pertenecientes al
+              cantón milagro de la provincia del guayas.
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <div class="experience-date">2005-2011</div>
+            <div class="experience-company">
+              Unidad Educativa Victor Lazo Alarcon
+            </div>
+            <div class="experience-position">Ciencias generales</div>
+            <div class="experience-description">
+              En esta Unidad Educativa es donde fueron mis inicios en la
+              educacion donde me fui formando en mis estudios, gracias a esta
+              Unidad Educativa pude seguir con mis estudios.
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/wave.svg" alt="división" class="wave wave_bottom" />
+    </section>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="skills" id="skills">
+        <h2 class="skills-title">Habilidades</h2>
+        <ul class="skills-list">
+          <li class="skills-skill">CSS</li>
+          <li class="skills-skill">HTML</li>
+          <li class="skills-skill">Node.js</li>
+          <li class="skills-skill">React.js</li>
+          <li class="skills-skill">TypeScript</li>
+          <li class="skills-skill">JavaScript</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="projects" id="cursos">
+      <h2 class="cursos-title">Cursos</h2>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-1"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+            checked="checked"
+          />
+          <div class="carousel-item">
+            <img src="http://fakeimg.pl/2000x800/0079D8/fff/?text=Css" />
+            <div class="proyects__hover">
+              <i class="far fa-file-alt proyects__icon"></i>
+              <p class="text-carousel">
+                CSS, en español «Hojas de estilo en cascada», es un lenguaje de
+                diseño gráfico para definir y crear la presentación de un
+                documento estructurado escrito en un lenguaje de marcado.
+              </p>
+            </div>
+          </div>
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-2"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="carousel-item">
+            <img src="http://fakeimg.pl/2000x800/DA5930/fff/?text=HTML" />
+            <div class="proyects__hover">
+              <i class="far fa-file-alt proyects__icon"></i>
+              <p class="text-carousel">
+                HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText
+                Markup Language) es el componente más básico de la Web. Define
+                el significado y la estructura del contenido web.
+              </p>
+            </div>
+          </div>
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-3"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="carousel-item">
+            <img src="http://fakeimg.pl/2000x800/F90/fff/?text=JavaScript" />
+            <div class="proyects__hover">
+              <i class="far fa-file-alt proyects__icon"></i>
+              <p class="text-carousel">
+                JavaScript es un lenguaje de programación interpretado, dialecto
+                del estándar ECMAScript. Se define como orientado a objetos, ​
+                basado en prototipos, imperativo, débilmente tipado y dinámico.
+              </p>
+            </div>
+          </div>
+          <label for="carousel-3" class="carousel-control prev control-1"
+            >‹</label
+          >
+          <label for="carousel-2" class="carousel-control next control-1"
+            >›</label
+          >
+          <label for="carousel-1" class="carousel-control prev control-2"
+            >‹</label
+          >
+          <label for="carousel-3" class="carousel-control next control-2"
+            >›</label
+          >
+          <label for="carousel-2" class="carousel-control prev control-3"
+            >‹</label
+          >
+          <label for="carousel-1" class="carousel-control next control-3"
+            >›</label
+          >
+          <ol class="carousel-indicators">
+            <li>
+              <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer__container" id="contact">
+      <div class="main-content">
+        <div class="left box">
+          <h1 class="content__title">Contactanos</h1>
+          <div class="content">
+            <ul class="content__contact">
+              <li class="contact-data">Direccion:</li>
+              <li class="contact-data">Milagro/Ecuador</li>
+              <li class="contact-data">Email:</li>
+              <li class="contact-data">jsaltosv@unemi.edu.ec</li>
+              <li class="contact-data">
+                <p>Deje su mensaje y con gusto le respondere</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right box">
+          <div class="content">
+            <form action="#" id="encuesta">
+              <div class="name">
+                <div class="text">Nombre *</div>
+                <input
+                  type="text"
+                  id="nombre"
+                  class="formcontrol"
+                  placeholder="Nombre"
+                  title="El nombre solo acepta letras"
+                  pattern="^[A-Za-zÑñáéíóú\s]+$"
+                  required
+                />
+              </div>
+              <div class="email">
+                <div class="text">Email *</div>
+                <input
+                  type="email"
+                  id="email"
+                  class="formcontrol"
+                  placeholder="Email"
+                  title="Email ingresado es incorrecto"
+                  pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                  required
+                />
+              </div>
+              <div class="msg">
+                <div class="text">Mensaje *</div>
+                <textarea
+                  name=""
+                  id="comentario"
+                  cols="30"
+                  rows="10"
+                  class="formcontrol"
+                  placeholder="Envianos tu mensaje"
+                  title="tu comentario no debe exceder de 255 caracteres"
+                  data-pattern="^.{2,255}$"
+                  required
+                ></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit" id="enviar" class="btnsubmit">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="saludos" id="saludos"></div>
+      </div>
+    </div>
+  </body>
+</html>
